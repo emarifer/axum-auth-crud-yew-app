@@ -1,0 +1,28 @@
+[package]
+name = "rust-axum-supabase-api"
+authors = ["emarifer <https://portfolio-cv-pwa.netlify.app/>"]
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+argon2 = "0.5.0"
+axum = "0.6.18"
+axum-extra = { version = "0.7.4", features = ["cookie"] }
+chrono = { version = "0.4.26", features = ["serde"] }
+dotenv = "0.15.0"
+jsonwebtoken = "8.3.0"
+postgrest = "1.5.0"
+rand_core = { version = "0.6.4", features = ["std"] }
+serde = { version = "1.0.166", features = ["derive"] }
+serde_json = "1.0.100"
+thiserror = "1.0.41"
+time = "0.3.22"
+tokio = { version = "1.29.1", features = ["full"] }
+tower = "0.4.13"
+tower-http = { version = "0.4.1", features = ["cors", "fs", "trace"] }
+tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
+uuid = { version = "1.4.0", features = ["serde", "v4"] }
+validator = { version = "0.16.1", features = ["derive"] }
